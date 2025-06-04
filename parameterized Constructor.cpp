@@ -18,9 +18,13 @@ public:
     Kush (int k):Kush () {
         cout<<"kush is The king"<<endl;
     }
+
+    Kush (int a, int b) : Kush (10) {
+        cout<<"kush is The Kong"<<endl;
+    }
 };
 
 int main() {
-    Kush s(7);
+    Kush s(7,10);
     return 0;
 }
