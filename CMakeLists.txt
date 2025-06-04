@@ -9,4 +9,5 @@ add_executable(OOP_Ashish main.cpp
         static.cpp
         destructor.cpp
         inheretance.cpp
-        "parameterized Constructor.cpp")
+        "parameterized Constructor.cpp"
+        Assignment.cpp)
