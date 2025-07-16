@@ -26,9 +26,7 @@ public:
 };
 
 int main() {
-  int id,n;
-  string name;
-  float salary;
+  int n;
   Employee e[n];
 
   cout <<"How many employee do you want to store"<<endl;

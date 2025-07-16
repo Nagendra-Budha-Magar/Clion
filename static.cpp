@@ -2,42 +2,37 @@
 #include <string>
 using namespace std;
 
-class Student {
+void Fun() {
+     static int x = 0;  // it initailize x once in a lifetime of a program
+    cout<<x<<endl;
+    x++;
+} // for function
+
+class A {
 public:
-    int rollNo;
-    string name;
-    static string collegeName; // Static member declaration
+    int x;
 
-
-
-    void display() {
-        cout << "Name: " << name << ", Roll No: " << rollNo
-            << ", College: " << collegeName << endl;
+    void inc() {
+        x++;
     }
 };
 
-string  Student::collegeName = "Radiant";
-
 int main() {
-    Student niraj, golu, Ashish;
+    Fun();
+    Fun();
 
-    // Initializing student data
-    niraj.rollNo = 1;
-    niraj.name = "Niraj";
-    niraj.collegeName = "testing";
+    A obj;
+    A obj2;obj.x = 0;
+    obj2.x = 2;
+    obj.inc();
+    cout<<obj.x<<endl;
+    cout<<obj2.x<<endl;
+    obj.inc();
+    cout<<obj.x<<endl;
+    cout<<obj2.x<<endl;
+    cout<<obj.x<<endl;
+    cout<<obj2.x<<endl;
 
 
-    golu.rollNo = 2;
-    golu.name = "Golu";
-
-    Ashish.rollNo = 3;
-    Ashish.name = "Ashish";
-    Ashish.collegeName = "Radiant College";
-
-
-    // Displaying student details
-    niraj.display();
-    golu.display();
-    Ashish.display();
     return 0;
 }

@@ -24,7 +24,7 @@ public:
 
 class Teacher : public Person {
 public:
-    double salary;  // using double insted of float
+    float salary;  // using double insted of float
 };
 
 int main() {
@@ -36,7 +36,7 @@ int main() {
     cout<<"Student Course = "<<s.course<<endl;
 
     Teacher t;
-    t.salary = 99999999;
+    t.salary = (float)9000007;
     cout<<fixed<<setprecision(0);  //manipulator that convert the number
     cout<<"Teacher Salary = "<<t.salary<<endl;
 
