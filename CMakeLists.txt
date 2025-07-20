@@ -25,4 +25,11 @@ add_executable(OOP_Ashish main.cpp
         Static_binding.cpp
         Dinamic_binding.cpp
         operator_overload.cpp
+        list.cpp
+        vector.cpp
+        Exception_handling.cpp
+        Assigiment.cpp
+        custom_exception.cpp
+        multi_exception.cpp
+        Template.cpp
 )
